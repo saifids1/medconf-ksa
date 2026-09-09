@@ -34,21 +34,21 @@ export default function partnershipOpportunities() {
   const isRTL = language === "ar";
 
   const partners = [
-    {
-      id: "business",
-      name: t.businessPackage,
-      color: "rgb(76 76 76)",
-      price: "Custom Pricing",
-      space: t.businessPackageBasedonSpaceandLocation,
-      features: [
-        t.businessPackageLocations,
-        t.businessPackageSupport,
-        t.businessPackageSpace,
-        t.businessPackageParking,
-        t.businessPackageManager,
-      ],
-      customPrice: true,
-    },
+    // {
+    //   id: "business",
+    //   name: t.businessPackage,
+    //   color: "rgb(76 76 76)",
+    //   price: "Custom Pricing",
+    //   space: t.businessPackageBasedonSpaceandLocation,
+    //   features: [
+    //     t.businessPackageLocations,
+    //     t.businessPackageSupport,
+    //     t.businessPackageSpace,
+    //     t.businessPackageParking,
+    //     t.businessPackageManager,
+    //   ],
+    //   customPrice: true,
+    // },
     {
       id: "gold",
       name: t.goldPartner,
@@ -202,7 +202,7 @@ export default function partnershipOpportunities() {
             </div>
 
             <div className="flex justify-center">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 px-4 sm:px-4 md:px-0 max-w-xs sm:max-w-none w-full sm:w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 px-4 sm:px-4 md:px-0 max-w-xs sm:max-w-none w-full sm:w-full">
                 {partners.map((tier, index) => {
                   return (
                     <div
