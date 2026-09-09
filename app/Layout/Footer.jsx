@@ -47,11 +47,7 @@ export default function Footer() {
       label: t.practitionerRegistration,
       href: "/Services/practitionerregistration",
     },
-    {
-      label: t.viewAllServices,
-      href: "/Services",
-      isViewAll: true,
-    },
+  
   ];
 
   const portals = [
@@ -71,11 +67,7 @@ export default function Footer() {
       label: t.healthCarePortal,
       href: "https://hpql-healthcare-practitioner.i-diligence.com/login",
     },
-    {
-      label: t.viewAllPortals,
-      href: "/pages/SignIn",
-      isViewAll: true,
-    },
+   
   ];
 
   const whatsOn = [
@@ -103,11 +95,7 @@ export default function Footer() {
       label: t.guidedExhibitionTours,
       href: "/pages/WhatsOn/GuidedExhibitionTours",
     },
-    {
-      label: t.viewAllEvents,
-      href: "#",
-      isViewAll: true,
-    },
+   
   ];
 
   // Column 5: Resources

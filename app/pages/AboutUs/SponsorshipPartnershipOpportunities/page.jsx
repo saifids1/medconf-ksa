@@ -200,24 +200,25 @@ export default function partnershipOpportunities() {
                 </p>
               </div>
             </div>
-<div className="flex justify-center">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 px-4 sm:px-4 md:px-0 max-w-2xl sm:max-w-4xl lg:max-w-5xl w-full">
-    {partners.map((tier, index) => {
-      return (
-        <div
-          key={tier.id}
-          className="group relative flex justify-center"
-        >
-          <div className="relative w-full max-w-[250px] sm:max-w-[220px] md:max-w-[240px] lg:max-w-[310px] h-[300px] sm:h-auto rounded-lg sm:rounded-xl md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col mx-auto">
-            {/* Header with custom color */}
-            <div
-              className="relative p-4 sm:p-4 md:p-5 lg:p-6"
-              style={{ backgroundColor: tier.color }}
-            >
-              <h3 className="text-center sm:text-base md:text-lg lg:text-xl font-bold text-white">
-                {tier.name}
-              </h3>
-            </div>
+
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 px-4 sm:px-4 md:px-0 max-w-xs sm:max-w-none w-full sm:w-full">
+                {partners.map((tier, index) => {
+                  return (
+                    <div
+                      key={tier.id}
+                      className="group relative flex justify-center"
+                    >
+                      <div className="relative w-full sm:w-full max-w-[320px] sm:max-w-none h-[320px] sm:h-auto rounded-lg sm:rounded-xl md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col">
+                        {/* Header with custom color */}
+                        <div
+                          className="relative p-4 sm:p-4 md:p-5 lg:p-6"
+                          style={{ backgroundColor: tier.color }}
+                        >
+                          <h3 className="text-centyer sm:text-base md:text-lg md:text-center lg:text-xl font-bold text-white text-center  sm:text-left">
+                            {tier.name}
+                          </h3>
+                        </div>
 
             {/* Content */}
             <div className="relative p-4 sm:p-4 md:p-5 lg:p-6 flex-1 flex flex-col">
