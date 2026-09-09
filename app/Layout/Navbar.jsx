@@ -75,7 +75,7 @@ export default function Navbar() {
 
     {
       label: "portals",
-      href: "/",
+      href: "#",
       submenus: [
         {
           label: "sponsorPortal",
